@@ -1,0 +1,6 @@
+{
+  "freeShippingProgressBar": {
+    "isReached": "You are eligible for free shipping!",
+    "isNotReached": "Spend {missingAmount} more and get free shipping!"
+  }
+}
