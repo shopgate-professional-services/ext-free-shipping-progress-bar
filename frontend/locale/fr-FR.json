@@ -1,0 +1,6 @@
+{
+  "freeShippingProgressBar": {
+    "isReached": "Vous êtes éligible à l'envoi gratuit!",
+    "isNotReached": "Dépensez {missingAmount} de plus et obtenez la livraison gratuite!"
+  }
+}
