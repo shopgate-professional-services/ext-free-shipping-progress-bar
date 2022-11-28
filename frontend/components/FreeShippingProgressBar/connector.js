@@ -1,7 +1,12 @@
 import { connect } from 'react-redux';
 import { getCurrency, getSubTotal } from '@shopgate/engage/cart';
 
-const mapStateToProps = (state) => ({
+/**
+ * Maps state to props.
+ * @param {*} state The current application state.
+ * @returns {Object}
+ */
+const mapStateToProps = state => ({
   subTotal: getSubTotal(state),
   currency: getCurrency(state),
 });

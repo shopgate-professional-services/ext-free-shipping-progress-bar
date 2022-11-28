@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0",
   "id": "@shopgate-project/free-shipping-progress-bar",
   "components": [
     {
@@ -42,7 +42,7 @@
       "params": {
         "required": true,
         "type": "number",
-        "label": "Free shipping from"
+        "label": "Amount to reach the free shipping"
       }
     },
     "outerColor": {
