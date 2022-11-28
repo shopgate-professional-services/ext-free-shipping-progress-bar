@@ -7,7 +7,7 @@
 export const getCompleted = (subTotal, freeShippingFrom) => {
   let completed = Math.round((subTotal / freeShippingFrom) * 100) * 100 / 100;
 
-  completed = completed > 100 ? completed = 100 : completed;
+  completed = completed > 100 ? 100 : completed;
 
   if (freeShippingFrom <= 0 && subTotal <= 0) {
     return 0;
