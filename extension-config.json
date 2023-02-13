@@ -33,7 +33,7 @@
       "path": "frontend/locale/it-IT.json",
       "id": "locale/it-IT"
     }
-  ], 
+  ],
   "configuration": {
     "freeShippingFrom": {
       "type": "admin",
