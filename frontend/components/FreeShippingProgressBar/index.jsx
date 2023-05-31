@@ -10,12 +10,13 @@ import { getCompleted, getMissingAmount } from '../../helpers/getProcessBarValue
 const isIOS = themeName.includes('ios');
 
 /**
- * Get exntesion config
+ * Get extension config
  */
 const {
   freeShippingFrom,
   outerColor,
   innerColor,
+  asteriskText,
 } = getConfig();
 
 /**
@@ -50,8 +51,9 @@ const outerStyle = css(isIOS ? {
 
 const noticeStyle = css({
   marginTop: '9px',
-  fontSize: '14px',
+  fontSize: '12px',
   lineHeight: 'normal',
+  textAlign: 'center',
 }).toString();
 
 const containerStyle = css({
@@ -85,6 +87,8 @@ const ProgressBarContainer = ({ missingAmount, completed, currency }) => (
         <I18n.Text string="freeShippingProgressBar.isNotReached" params={{ missingAmount }}>
           <I18n.Price price={missingAmount} currency={currency} forKey="missingAmount" />
         </I18n.Text>
+        {' '}
+        <AsteriskText />
       </div>
     </div>
   ) : (
@@ -92,6 +96,8 @@ const ProgressBarContainer = ({ missingAmount, completed, currency }) => (
       <ProgressBar completed={completed} />
       <div className={noticeStyle}>
         <I18n.Text string="freeShippingProgressBar.isReached" />
+        {' '}
+        <AsteriskText />
       </div>
     </div>
   )
@@ -109,6 +115,16 @@ const FreeShippingProgressBar = props => (
       completed={getCompleted(props.subTotal, freeShippingFrom)}
       currency={props.currency}
     />
+  ) : null
+);
+
+/**
+ * The AsteriskText component
+ * @returns {JSX}
+ */
+const AsteriskText = () => (
+  asteriskText.length > 0 ? (
+    <I18n.Text string={asteriskText}></I18n.Text>
   ) : null
 );
 

@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+## [1.1.0] - 2023-05-25
+### Added
+* Option to display a custom text on the cart page
+
 ## [1.0.0] - 2023-02-13
 ### Added
 * First version: Adds a free shipping progress bar to the cart page.
