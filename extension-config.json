@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "id": "@shopgate-project/free-shipping-progress-bar",
   "components": [
     {
@@ -7,6 +7,12 @@
       "type": "portals",
       "path": "frontend/components/FreeShippingProgressBar",
       "target": "cart.item-list.before"
+    },
+    {
+      "id": "CartCustomText",
+      "type": "portals",
+      "path": "frontend/components/CartCustomText",
+      "target": "product.tax-disclaimer.after"
     },
     {
       "type": "translations",
@@ -38,7 +44,7 @@
     "freeShippingFrom": {
       "type": "admin",
       "destination": "frontend",
-      "default": 0.0,
+      "default": 0,
       "params": {
         "required": true,
         "type": "number",
@@ -63,6 +69,26 @@
         "required": true,
         "type": "string",
         "label": "Bar inner color"
+      }
+    },
+    "asteriskText": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "",
+      "params": {
+        "required": false,
+        "type": "string",
+        "label": "Asterisk text"
+      }
+    },
+    "cartAdditionalText": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "",
+      "params": {
+        "required": false,
+        "type": "string",
+        "label": "Custom text"
       }
     }
   }

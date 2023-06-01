@@ -1,6 +1,6 @@
 {
   "freeShippingProgressBar": {
-    "isReached": "Du hast kostenlosen Versand freigeschaltet!",
-    "isNotReached": "Dir fehlen noch {missingAmount} für kostenlosen Versand!"
+    "isReached": "Sie haben den kostenlosen Versand erreicht!",
+    "isNotReached": "Ihnen fehlen noch {missingAmount} bis zum kostenlosen Versand!"
   }
 }

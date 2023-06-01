@@ -5,13 +5,17 @@ Adds a free shipping progress bar to the cart page.
 - `freeShippingFrom`: Amount to reach free shipping
 - `outerColor`: Color of the progress bar
 - `innerColor`: Color of the inner progress bar
+- `asteriskText`: Text after free shipping info text
+- `cartAdditionalText`: Text after tax disclaimer
 
 # Example
-![Screenshot](./doc/screenshot.png)
 ```json
 {
-  "freeShippingFrom": 50,
-  "outerColor": "#00b1af",
-  "innerColor": "#fff"
+  "freeShippingFrom": 25,
+  "outerColor": "#000",
+  "innerColor": "#fff",
+  "asteriskText": "**",
+  "cartAdditionalText": "** Innerhalb von Deutschland"
 }
 ```
+![Screenshot](./doc/screenshot.png)
